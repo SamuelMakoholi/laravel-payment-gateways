@@ -33,94 +33,19 @@
                     <div class="">
                         <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
                             style="max-width: 3rem" />
-                          <div class="row">
-                            <form>
-                                <button type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
-                                    <i class="bi-cart-fill me-1"></i>
-                                    Buy With Paypal
-                                </button>
-                            </form>
-                          </div>
-
-                            {{-- <div class="row">
+                            <div class="row">
                                 <div class="col-md-4 my-2">
-                                    <form action="" method="POST">
+                                    <form action="{{ route('paypal.payment')}}" method="POST">
                                         @csrf
                                         <input type="hidden" value="40" name="price">
                                         <button type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
                                             <i class="bi-cart-fill me-1"></i>
-                                            Buy With Paypal
+                                            Buy Now
                                         </button>
                                     </form>
-                                </div>
-                                <div class="col-md-4 my-2">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <input type="hidden" value="40" name="price">
-                                        <button type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
-                                            <i class="bi-cart-fill me-1"></i>
-                                            Buy With Stripe
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="col-md-4 my-2">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <script src="https://checkout.razorpay.com/v1/checkout.js"
-                                                data-key=""
-                                                data-amount="{{ 40 * 100}}"
-                                                data-buttontext="Pay With Razorpay"
-                                                data-name="test payment"
-                                                data-description="Payment"
-                                                data-prefill.name="user"
-                                                data-prefill.email="user@gmail.com"
-                                                data-theme.color="#ff7529">
-                                        </script>
-                                   </form>
-                                </div>
-                                <div class="col-md-4 my-2">
-                                    <a href="" type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
-                                        <i class="bi-cart-fill me-1"></i>
-                                        Buy With 2CO
-                                    </a>
                                 </div>
 
-                                <div class="col-md-6 my-2">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="price" value="3700">
-                                        <button type="submit" class="btn btn-outline-dark flex-shrink-0">
-                                            <i class="bi-cart-fill me-1"></i>
-                                            Buy With Instamojo
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="col-md-4 my-2">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="price" value="40">
-                                        <button type="submit" class="btn btn-outline-dark flex-shrink-0">
-                                            <i class="bi-cart-fill me-1"></i>
-                                            Buy With Mollie
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="col-md-4 my-2">
-                                    <a href="" type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
-                                        <i class="bi-cart-fill me-1"></i>
-                                        Buy With Paystack
-                                    </a>
-                                </div>
-                                <div class="col-md-6 my-2">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <button type="submit" class="btn btn-outline-dark flex-shrink-0" >
-                                            <i class="bi-cart-fill me-1"></i>
-                                            Buy With Ssscommerz
-                                        </button>
-                                      </form>
-                                </div>
-                            </div> --}}
+                            </div>
 
                     </div>
                 </div>
